@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="../jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="../jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="../jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="estilos.css" />
+
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body class="w3-content" style="max-width:500px">
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="a" data-dividertheme="a">
+	<div data-role="header">
+		<h1>Página uno</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Página dos</a></li>
+            <li><a href="#page3">Página tres</a></li>
+			<li><a href="#page4">Popup Basico</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Página dos</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Página tres</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Popup Basico</h1>
+	</div>
+	<div data-role="content" data-role="Popup">			
+    <div class="w3-container w3-card w3-indigo">
+  <h1>Popup Basico</h1>
+</div>
+
+<ul class="w3-ul">
+  <li>
+    <h3><i class="fa fa-bars"></i><a href="#page"> 1. Huawei Technologies</h3></a>
+    <p align="justify">Huawei Technologies Co., Ltd. Es una empresa privada multinacional china    de alta tecnología especializada en investigación y desarrollo (I+D), producción electrónica    y marketing de equipamiento de comunicaciones. Además, provee soluciones de redes      personalizadas para operadores de la industria de telecomunicaciones.</p>
+<div class="popup" onclick="myFunction()">
+    <p align="justify">1.1 Telefonia Móvil Huawei Technologies!</p>
+  		<span class="popuptext" id="myPopup">Huawei Technologies </span>
+	</div>
+	<script>
+		//Cuando el usuario de clic en la div, se abrira el Popup
+		function myFunction() {
+	    var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+	}
+	</script>
+  </li>
+  <li>
+    <h3>2. Huawei Technologies</h3>
+    <p>Empresa privada propiedad de los empleados.</p>
+  </li>
+  <li>
+    <h3>3. Industria</h3>
+    <p>Electrónica de consumo equipos de telecomunicaciones hardware de red.</p>
+  </li>
+</ul>
+
+<div class="w3-container w3-indigo w3-xlarge">
+  <h5 align="center">https://consumer.huawei.com/mx/</h5>
+</div>
+
+<div>    
+</div>
+	</div>
+	<div data-role="footer">
+		<h4>Visita la pagina oficial de Huawei.com.mx</h4>
+	</div>
+</div>
+
+</body>
+</html>
